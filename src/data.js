@@ -4,7 +4,9 @@ const path = require("path");
 const accountData = fs.readFileSync(
   path.join(__dirname, 'json', 'accounts.json'), 'utf-8'
   );
+//console.log(`accountData ${accountData}`);
 const accounts = JSON.parse(accountData);
+//console.log(accounts.savings);
 
 const userData = fs.readFileSync(
   path.join(__dirname, 'json', 'users.json'), 'utf-8'
